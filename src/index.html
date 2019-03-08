@@ -21,6 +21,8 @@
 <!-- Google Font -->
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
@@ -30,45 +32,258 @@
 <body>
   <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
-    </div>
-  </div>
-</header>
+    <header class="b-header-container" id="b-header-container">
+    <div class="container">
+        <div class="header-menu">
+            <a href="#" class="link-logo">
+                <img src="src/images/logo.png" alt="" class="b-logo"></a>
+
+                <div class="group-btn">
+                    <a href="#" class="btn-item">LOG IN</a>
+                    <a href="#" class="btn-item">SIGN UP</a>
+                    <a href="#" class="btn-item">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
+    <section class="b-page-content">
+  <div class="b-content">
+      <h4 class="title-find">Find your Favorite</h4>
+      <h2 class="title-recipes">RECIPES</h2>
+      <div class="btn-start">
+          <a href="#" class="get-start">GET STARTED</a>
       </div>
-    </div>
+      <p class="b-text">OR SEND US YOUR OWN RECIPES AND GET REWARDED</p>
   </div>
 </section>
 
-    <main class="main-container">
-      <div class="container">
+    <!-- include feature.html -->
+    <section class="b-page-features">
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
-        </div>
-      </div>
-    </main>
+            <div class="col-lg-4">
+                <img src="/src/images/icon-eat.png" alt="" class="b-image">
+                    <h4 class="b-title">GETSPRIRED</h4>
+                    <P class="b-text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque
+                        vel enim a elit viverra elementuma. Aliquam erat volutpat</P>
+                </div>
+                <div class="col-lg-4">
+                    <img src="/src/images/icon-eat.png" alt="" class="b-image">
+                        <h4 class="b-title">GET REWARDED</h4>
+                        <P class="b-text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque
+                            vel enim a elit viverra elementuma. Aliquam erat volutpat</P>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="/src/images/icon-eat.png" alt="" class="b-image">
+                            <h4 class="b-title">GET SOCIAL</h4>
+                            <P class="b-text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque
+                                vel enim a elit viverra elementuma. Aliquam erat volutpat</P>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+    <!-- include introduction.html -->
+    <section class="b-page-introduc">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <img src="/src/images/iphone5.png" alt="" width="100%">
+                <img src="/src/images/background_ip.png" alt="" width="100%">
+            </div>
+            <div class="col-lg-7">
+                <h4 class="title-introduc">
+                    INTRODUCING THE FUDI APP
+                </h4>
+                <p class="b-text">
+                    Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 
+                    felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                    ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
+                </p>
+                <p class="b-text">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In 
+                    libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                    sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. 
+                    Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. 
+                </p>
+                    
+                <p class="b-text">
+                    Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam 
+                    malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
+                    ante, a mattis massa. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- include slider.html -->
+    <section class="b-page-slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="lazy-item-1 b-carousel text-center">
+                    <div>
+                        <div class="b-images">
+                            <img
+                                data-lazy="./images/slide_slick.png"
+                                data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
+                                data-sizes="100vw"></div>
+                            <div class="b-content">
+                                <img src="./images/person.png" alt="" class="img-person">
+                                    <p class="b-text">
+                                        “I am so happy because I found this recipe, and it just made my life easier.
+                                        Thanks so much for sharing!”
+
+                                    </p>
+                                    <p class="p-current">
+                                        <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="b-images">
+                                    <img
+                                        data-lazy="./images/slide_slick.png"
+                                        data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
+                                        data-sizes="100vw"></div>
+                                    <div class="p-content">
+                                        <img src="./images/person.png" alt="" class="img-person">
+                                            <p class="p-text">
+                                                “I am so happy because I found this recipe, and it just made my life easier.
+                                                Thanks so much for sharing!”
+
+                                            </p>
+                                            <p class="b-current">
+                                                <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="b-images">
+                                            <img
+                                                data-lazy="./images/slide_slick.png"
+                                                data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
+                                                data-sizes="100vw"></div>
+                                            <div class="b-content">
+                                                <img src="./images/person.png" alt="" class="img-person">
+                                                    <p class="b-text">
+                                                        “I am so happy because I found this recipe, and it just made my life easier.
+                                                        Thanks so much for sharing!”
+
+                                                    </p>
+                                                    <p class="b-current">
+                                                        <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+    <!-- include cusines.html -->
+    <section class="b-page-cusines">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <h4 class="heading-title text-center">BROWSE BY CUISINES</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-eat img-1">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-2">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-3">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-4">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-5">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="img-eat img-6">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-7">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-8">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-9">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+            <div class="img-eat img-10">
+                <p class="b-price">327 Recipes</p>
+                <h2 class="eat-title">ITALIAN</h2>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <!-- include number.html -->
+    <section class="b-page-number">
+    <div class="container">
+        <div class="row">
+            <div class="count-price">
+                <h2 class="count-price">23,567</h2>
+                <p class="b-text">Recipes Avaitable</p>
+            </div>
+            <div class="count-price">
+                <h2 class="count-price">23,567</h2>
+                <p class="b-text">Recipes Avaitable</p>
+            </div>
+            <div class="count-price">
+                <h2 class="count-price">23,567</h2>
+                <p class="b-text">Recipes Avaitable</p>
+            </div>
+            <div class="count-price">
+                <h2 class="count-price">23,567</h2>
+                <p class="b-text">Recipes Avaitable</p>
+            </div>
+            <div class="count-price">
+                <h2 class="count-price">23,567</h2>
+                <p class="b-text">Recipes Avaitable</p>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- include footer.html -->
     <footer class="footer-container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Footer Container</p>
+      <div class="row">
+          <div class="col-lg-6">
+              <p class="b-copyright">
+                  &copy;2014 Fudi All Right Reserved
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p class="b-link">
+                  DESIGN BY: <span class="b-curent"> WWW.BEKADES.COM</span>
+              </p>
+          </div>
       </div>
-    </div>
   </div>
 </footer>
   </div>
@@ -78,6 +293,7 @@
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbuild -->
+
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
