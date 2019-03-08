@@ -4,19 +4,20 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
     background-color: rgba(75, 193, 210, 0);
     .header-menu {
         @include flexbox();
         @include justify-content(space-between);
         @include align-items(center);
-        .logo-img {
-            .link-logo {
-                width: 50%;
-                .b-logo {
-                    width: 100px;
-                }
+
+        .link-logo {
+            width: 50%;
+            .b-logo {
+                width: 100px;
             }
         }
+
         .group-btn {
             .btn-item {
                 padding: 0 10px;
