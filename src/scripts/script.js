@@ -10,4 +10,5 @@ $(document).ready(function () {
             $("#b-header-container").css('background-color', 'rgba(203,190,190, ' + opacity + ')')
         }
     })
+    $('.mySlider').slick({ dots: true, infinite: true, arrows: false });
 });
