@@ -1,0 +1,34 @@
+.b-page-slider {
+    position: relative;
+    width: 100%;
+    
+    .mySlider {
+        .item {
+            position: relative;
+            
+            .b-content {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include transform(translate(-50%,-50%));
+                .img-person {
+                    display: inline-block;
+                }
+                .b-text {
+                    margin-top: 10px;
+                    @include rem("font-size",25);
+                    font-family: $ff_text;
+                    color: #aba4a4;
+                    @include rem("line-height",45);
+                }
+                .b-person{
+                    @include rem("font-size",15);
+                    font-family: $ff_text;
+                    color: #aba4a4;
+                    @include rem("line-height",45);
+                }
+            }
+        }
+    }
+
+}
