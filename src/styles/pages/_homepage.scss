@@ -1,0 +1,84 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+.b-page-content {
+    background-image: url("/src/images/background-banner-top.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("/images/shadow.png");
+    }
+    .b-content {
+        padding-top: 100px;
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        .title-find {
+            @include rem(font-size , 36);
+            @include rem(line-height,3);
+            color: rgba(255, 255, 255, 0.702);
+            font-family: $ff_title;
+            font-weight: bold;
+            font-style: italic;
+            @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
+        }
+        .title {
+            margin-top: 50px;
+            .title-recipes {
+                @include rem(font-size , 100);
+                @include rem(line-height,30);
+                color: $cl_text;
+                font-family: $ff_text;
+                font-weight: 700;
+                @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
+            }
+        }
+        .btn-start {
+            margin-top: 80px;
+            .get-start {
+                padding: 20px 70px;
+                text-align: center;
+                font-weight: 700;
+                color: $cl_text;
+                font-family: $ff_text;
+                @include rem("font-size",13);
+                @include rem(letter-spacing,2);
+                border: 3px solid rgb(255, 255, 255);
+                border-radius: 3px;
+                width: 284px;
+                height: 72px;
+                &:hover{
+                    background-color: rgba(255, 255, 255,0.2);
+                }
+            }
+        }
+        .text {
+            margin-top: 50px;
+            .b-text {
+                @include rem(font-size , 14);
+                @include rem(letter-spacing,1);
+                @include rem(line-height,30);
+                color: rgba(255, 255, 255, 0.702);
+                font-family: $ff_text;
+                font-weight: 400;
+                text-align: center;
+                @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
+            }
+        }
+    }
+}
