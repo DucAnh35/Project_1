@@ -1,0 +1,22 @@
+.b-page-number {
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+
+    .stat-items {
+        width: 20%;
+        text-align: center;
+        .b-title {
+            @include rem("font-size",36);
+            font-family: $ff_text;
+            color: $cl_text_2;
+            font-weight: bold;
+            @include rem("line-height",50);
+        }
+        .b-text {
+            @include rem("font-size",16);
+            font-family: $ff_text;
+            color: $cl_text_1;
+        }
+    }
+}
