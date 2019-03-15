@@ -51,8 +51,9 @@ html {
         .btn-start {
             margin-top: 80px;
             .get-start {
-                padding: 20px 70px;
-                text-align: center;
+                @include flexbox();
+                @include justify-content(center);
+                @include  align-items( center);
                 font-weight: 700;
                 color: $cl_text;
                 font-family: $ff_text;
@@ -62,9 +63,9 @@ html {
                 border-radius: 3px;
                 width: 284px;
                 height: 72px;
-                &:hover{
-                    background-color: rgba(255, 255, 255,0.2);
-                }
+                // &:hover{
+                //     background-color: rgba(255, 255, 255,0.2);
+                // }
             }
         }
         .text {
