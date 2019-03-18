@@ -27,37 +27,61 @@ html {
         position: absolute;
         top: 50%;
         left: 50%;
-        @include transform (translate(-50%,-50%));
+
+        @include transform(translate(-50%,-50%));
         .title-find {
             @include rem(font-size , 36);
-            @include rem(letter-spacing,2);
             @include rem(line-height,3);
-            color: $cl_text;
+            color: rgba(255, 255, 255, 0.702);
             font-family: $ff_title;
             font-weight: bold;
             font-style: italic;
-            @include box-shadow(0.5px 0.866px 40px rgba(1,1,1,0.55));
+            @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
         }
-        .title-recipes {
+        .title {
             margin-top: 50px;
-            @include rem(font-size , 100);
-            @include rem(letter-spacing,5);
-            @include rem(line-height,30);
-            color: $cl_text;
-            font-family: $ff_text;
-            font-weight: 700;
-            @include box-shadow(0.5px 0.866px 40px rgba(1,1,1,0.55));
+            .title-recipes {
+                @include rem(font-size , 100);
+                @include rem(line-height,30);
+                color: $cl_text;
+                font-family: $ff_text;
+                font-weight: 700;
+                @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
+            }
         }
-        
-        .b-text {
-            margin-top: 70px;
-            @include rem(font-size , 14);
-            @include rem(letter-spacing,1);
-            @include rem(line-height,30);
-            color: $cl_text;
-            font-family: $ff_text;
-            font-weight: 400;
-            box-shadow: 0.5px 0.866px 40px rgba(1,1,1,0.55);
+        .btn-start {
+            margin-top: 80px;
+            .get-start {
+                @include flexbox();
+                @include justify-content(center);
+                @include  align-items( center);
+                font-weight: 700;
+                color: $cl_text;
+                font-family: $ff_text;
+                @include rem("font-size",13);
+                @include rem(letter-spacing,2);
+                border: 3px solid rgb(255, 255, 255);
+                border-radius: 3px;
+                width: 284px;
+                height: 72px;
+                // &:hover{
+                //     background-color: rgba(255, 255, 255,0.2);
+                // }
+            }
+        }
+        .text {
+            margin-top: 50px;
+            .b-text {
+                @include rem(font-size , 14);
+                @include rem(letter-spacing,1);
+                @include rem(line-height,30);
+                color: rgba(255, 255, 255, 0.702);
+                font-family: $ff_text;
+                font-weight: 400;
+                text-align: center;
+                @include single-text-shadow(0px 1px 40px rgba(1, 1, 1, 0.55));
+            }
+
         }
     }
 }

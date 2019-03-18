@@ -4,10 +4,10 @@ $(document).ready(function () {
         var opacity = 0;
         if (scroll < 100) {
             opacity = scroll / 100 ;
-            $("#b-header-container").css('background-color', 'rgba(75, 193, 210, ' + opacity + ')');
+            $("#b-header-container").css('background-color', 'rgba(203,190,190, ' + opacity + ')');
         } else {
             opacity = 1;
-            $("#b-header-container").css('background-color', 'rgba(75, 193, 210, ' + opacity + ')')
+            $("#b-header-container").css('background-color', 'rgba(203,190,190, ' + opacity + ')')
         }
     })
 });
