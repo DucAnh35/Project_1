@@ -1,50 +1,58 @@
 .b-page-introduc {
     padding-top: 100px;
     background-color: $bg_color;
-    .img-iphone {
-        .img-1 {
+    .content-introduc{
+        @include flexbox();
+        @include justify-content(space-around);
+        @include align-content(center);
+        .img-iphone {
             position: relative;
             width: 100%;
-            height: 100%;
+            .img-1 {
+                width: 100%;
+                height: 100%;
+            }
         }
-    }
-    .b-introducing {
-        margin-top: 100px;
-        margin-left: 50px;
-        .title {
-            .title-introduc {
-                position: relative;
-                @include rem("font-size", 18);
-                font-family: $ff_text;
-                color: $cl_text_2;
-                font-weight: bold;
-
-                &.inline-1::after {
-                    content: ' ';
-                    width: 80px;
-                    height: 2px;
-                    background-color: #FA5882;
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                    @include transform(translateX(-50%,0));
-                    border-radius: 100%;
+       
+        .b-introducing {
+            margin-top: 100px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            .title {
+                .title-introduc {
+                    position: relative;
+                    @include rem("font-size", 18);
+                    font-family: $ff_text;
+                    color: $cl_text_2;
+                    font-weight: bold;
+    
+                    &.inline-1::after {
+                        content: ' ';
+                        width: 80px;
+                        height: 2px;
+                        background-color: #FA5882;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        @include transform(translateX(-50%,0));
+                        border-radius: 100%;
+                    }
                 }
             }
-        }
-        .text {
-            
-            .b-text {
-                padding-top: 20px; 
-                @include rem("font-size", 16);
-                font-family: $ff_text;
-                color: $cl_text_1;
-                @include rem("line-height",25);
-                
+            .text {
+    
+                .b-text {
+                    padding-top: 20px;
+                    @include rem("font-size", 16);
+                    font-family: $ff_text;
+                    color: $cl_text_1;
+                    @include rem("line-height",25);
+                    text-align: justify;
+                }
             }
-        }
-        .group-img{
-            padding-top: 20px;
+            .group-img {
+                padding-top: 20px;
+            }
         }
     }
 }
