@@ -2,7 +2,14 @@
 // Font
 // ----------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
-
+@font-face {
+    font-family: "Lato";
+    src: url('../fonts/Lato-Reg.ttf');
+}
+@font-face {
+    font-family: "Time New Roman";
+    src: url('../fonts/font-times-new-roman.ttf');
+}
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
