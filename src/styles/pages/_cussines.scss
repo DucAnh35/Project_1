@@ -29,7 +29,7 @@
         height: 200px;
         cursor: pointer;
         overflow: hidden;
-
+        @include transition(0.3s);
         .content-img {
             position: absolute;
             top: 50%;
@@ -37,14 +37,14 @@
             @include transform(translate(-50%,-50%));
             text-align: center;
             opacity: 0;
-            transition: 0.3s;
+            @include transition(0.3s);
             .b-price {
-                @include rem("font-size", 18px);
+                @include rem("font-size", 18);
                 font-family: $ff_title;
                 color: rgba(255, 255, 255, 0.902);
                 font-weight: bold;
                 font-style: italic;
-                line-height: 15px;
+                @include rem("line-height", 15);
                 @include single-text-shadow( 0 1px 40px rgba(1, 1, 1, 0.55));
             }
             .eat-title {
@@ -104,7 +104,6 @@
         }
         &:hover {
             background-size: 110% 110%;
-            transition: 0.3s;
             .content-img {
                 opacity: 1;
             }
