@@ -25,6 +25,9 @@
 
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
 <!-- endbuild -->
+<!-- slick -->
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick-theme.css" />
 <!-- build:css(.tmp) style/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
@@ -35,11 +38,9 @@
     <header class="b-header-container" id="b-header-container">
     <div class="container">
         <div class="header-menu">
-            <div class="logo-img">
-                <a href="#" class="link-logo">
-                    <img src="src/images/logo.png" alt="" class="b-logo"></a>
-            </div>
 
+            <a href="#" class="link-logo">
+                <img src="src/images/logo.png" alt="" class="b-logo"></a>
 
                 <div class="group-btn">
                     <a href="#" class="btn-item">LOG IN</a>
@@ -139,122 +140,114 @@
     </div>
 </section>
     <!-- include slider.html -->
-    <section class="b-page-slide">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="lazy-item-1 b-carousel text-center">
-                    <div>
-                        <div class="b-images">
-                            <img
-                                data-lazy="./images/slide_slick.png"
-                                data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
-                                data-sizes="100vw"></div>
-                            <div class="b-content">
-                                <img src="./images/person.png" alt="" class="img-person">
-                                    <p class="b-text">
-                                        “I am so happy because I found this recipe, and it just made my life easier.
-                                        Thanks so much for sharing!”
+    <section class="b-page-slider">
+    <div class="container-fuild">
+        <div class="mySlider">
+            <div class="item">
+                <img src="/src/images/slider.png" alt="" class="item-slide">
+                    <div class="b-content text-center">
+                        <img src="./images/person.png" alt="" class="img-person">
+                            <p class="b-text">
+                                “I am so happy because I found this recipe, and it just made my life easier.
+                                Thanks so much for sharing!”
 
-                                    </p>
-                                    <p class="p-current">
-                                        <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
-                                    </p>
-                                </div>
+                            </p>
+                            <p class="b-current">
+                                <i class="b-person">- Michael Dawson, San Francisco, CA -</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/src/images/slider.png" alt="" class="item-slide">
+                        <div class="b-content text-center">
+                            <img src="./images/person.png" alt="" class="img-person">
+                                <p class="b-text">
+                                    “I am so happy because I found this recipe, and it just made my life easier.
+                                    Thanks so much for sharing!”
+    
+                                </p>
+                                <p class="b-current">
+                                    <i class="b-person">- Michael Dawson, San Francisco, CA -</i>
+                                </p>
                             </div>
-                            <div>
-                                <div class="b-images">
-                                    <img
-                                        data-lazy="./images/slide_slick.png"
-                                        data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
-                                        data-sizes="100vw"></div>
-                                    <div class="p-content">
-                                        <img src="./images/person.png" alt="" class="img-person">
-                                            <p class="p-text">
-                                                “I am so happy because I found this recipe, and it just made my life easier.
-                                                Thanks so much for sharing!”
-
-                                            </p>
-                                            <p class="b-current">
-                                                <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="b-images">
-                                            <img
-                                                data-lazy="./images/slide_slick.png"
-                                                data-srcset="./images/slide_slick.png 650w, ./images/slide_slick.png 960w"
-                                                data-sizes="100vw"></div>
-                                            <div class="b-content">
-                                                <img src="./images/person.png" alt="" class="img-person">
-                                                    <p class="b-text">
-                                                        “I am so happy because I found this recipe, and it just made my life easier.
-                                                        Thanks so much for sharing!”
-
-                                                    </p>
-                                                    <p class="b-current">
-                                                        <span class="b-person">- Michael Dawson, San Francisco, CA -</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                    </div>
+                        <div class="item">
+                            <img src="/src/images/slider.png" alt="" class="item-slide"></div>
+                        </div>
+                    </div>
+                </section>
 
     <!-- include cusines.html -->
-    <section class="b-page-cusines">
-    <div class="container">
+    <section class="b-page-cussines">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
-                <h4 class="heading-title text-center">BROWSE BY CUISINES</h4>
+                <h4 class="heading-title text-center inline-1">BROWSE BY CUISINES</h4>
             </div>
         </div>
         <div class="row">
             <div class="img-eat img-1">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">327 Recipes</p>
+                    <h2 class="eat-title">ITALIAN</h2>
+                </div>
             </div>
             <div class="img-eat img-2">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">856 Recipes</p>
+                    <h2 class="eat-title">INDIAN</h2>
+                </div>
             </div>
             <div class="img-eat img-3">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">327 Recipes</p>
+                    <h2 class="eat-title">ITALIAN</h2>
+                </div>
             </div>
             <div class="img-eat img-4">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">27 Recipes</p>
+                    <h2 class="eat-title">FRENCH</h2>
+                </div>
             </div>
             <div class="img-eat img-5">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">174 Recipes</p>
+                    <h2 class="eat-title">STEAKHOUSE</h2>
+                </div>
             </div>
 
         </div>
         <div class="row">
             <div class="img-eat img-6">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">731 Recipes</p>
+                    <h2 class="eat-title">SEAFOOD</h2>
+                </div>
             </div>
             <div class="img-eat img-7">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">529 Recipes</p>
+                    <h2 class="eat-title">MEXICAN</h2>
+                </div>
             </div>
             <div class="img-eat img-8">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">145 Recipes</p>
+                    <h2 class="eat-title">CHINESE</h2>
+                </div>
             </div>
             <div class="img-eat img-9">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">327 Recipes</p>
+                    <h2 class="eat-title">PIZZA</h2>
+                </div>
             </div>
             <div class="img-eat img-10">
-                <p class="b-price">327 Recipes</p>
-                <h2 class="eat-title">ITALIAN</h2>
+                <div class="content-img">
+                    <p class="b-price">1,437 Recipes</p>
+                    <h2 class="eat-title">AMERICAN</h2>
+                </div>
             </div>
         </div>
         
@@ -312,8 +305,12 @@
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbuild -->
+
 <!-- wave button -->
 <script type="text/javascript" src="node_modules/materialize-css/js/waves.js"></script>
+
+<!-- slick -->
+<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
