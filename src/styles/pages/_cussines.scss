@@ -3,7 +3,7 @@
     left: 0;
     padding-top: 50px;
     width: 100%;
-    
+
     .heading-title {
         padding-bottom: 50px;
         @include rem("font-size",18);
@@ -29,7 +29,7 @@
         height: 200px;
         cursor: pointer;
         overflow: hidden;
-        
+
         .content-img {
             position: absolute;
             top: 50%;
@@ -37,7 +37,7 @@
             @include transform(translate(-50%,-50%));
             text-align: center;
             opacity: 0;
-            transition: 1s;
+            transition: 0.3s;
             .b-price {
                 @include rem("font-size", 18px);
                 font-family: $ff_title;
@@ -56,14 +56,15 @@
                 @include single-text-shadow( 0 1px 40px rgba(1, 1, 1, 0.55));
 
             }
-            &:hover{
-                opacity: 1;
-            }
+
         }
+       
+            
+        
         &.img-1 {
             background-image: url("/src/images/eat-item-1.png");
             background-size: 100% 100%;
-            
+
         }
         &.img-2 {
             background-image: url("/src/images/eat-item-2.png");
@@ -101,9 +102,12 @@
             background-image: url("/src/images/eat-item-10.png");
             background-size: 100% 100%;
         }
-        &:hover{
+        &:hover {
             background-size: 110% 110%;
-            transition: 1s;
+            transition: 0.3s;
+            .content-img {
+                opacity: 1;
+            }
         }
     }
 }
