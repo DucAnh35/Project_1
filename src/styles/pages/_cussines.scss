@@ -3,7 +3,7 @@
     left: 0;
     padding-top: 50px;
     width: 100%;
-    
+
     .heading-title {
         padding-bottom: 50px;
         @include rem("font-size",18);
@@ -19,7 +19,7 @@
             position: absolute;
             bottom: 45px;
             left: 50%;
-            transform: translate(-50%,50%);
+            @include transform (translate(-50%,50%));
             border-radius: 100%;
         }
     }
@@ -29,7 +29,7 @@
         height: 200px;
         cursor: pointer;
         overflow: hidden;
-        
+        @include transition(0.3s);
         .content-img {
             position: absolute;
             top: 50%;
@@ -37,33 +37,36 @@
             @include transform(translate(-50%,-50%));
             text-align: center;
             opacity: 0;
-            transition: 1s;
+            @include transition(0.3s);
             .b-price {
-                @include rem("font-size", 18px);
+                @include rem("font-size", 18);
                 font-family: $ff_title;
                 color: rgba(255, 255, 255, 0.902);
                 font-weight: bold;
                 font-style: italic;
-                line-height: 15px;
+                @include rem("line-height", 15);
                 @include single-text-shadow( 0 1px 40px rgba(1, 1, 1, 0.55));
             }
             .eat-title {
                 @include rem("font-size", 30);
-                letter-spacing: 5px;
+                @include rem("letter-spacing", 5);                
                 font-family: $ff_text;
                 color: $cl_text;
                 font-weight: bold;
                 @include single-text-shadow( 0 1px 40px rgba(1, 1, 1, 0.55));
 
             }
-            &:hover{
-                opacity: 1;
-            }
+    
+
         }
+       
+            
+        
         &.img-1 {
             background-image: url("/src/images/eat-item-1.png");
             background-size: 100% 100%;
-            
+
+
         }
         &.img-2 {
             background-image: url("/src/images/eat-item-2.png");
@@ -101,9 +104,11 @@
             background-image: url("/src/images/eat-item-10.png");
             background-size: 100% 100%;
         }
-        &:hover{
+        &:hover {
             background-size: 110% 110%;
-            transition: 1s;
+            .content-img {
+                opacity: 1;
+            }
         }
     }
 }
