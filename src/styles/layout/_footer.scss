@@ -1,0 +1,29 @@
+.footer-container {
+    position: relative;
+    margin-top: 50px;
+    border-top: 1px solid rgb(207, 205, 205);
+    background-color: $bg_color;
+    .page-footer {
+        height: 100px;
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        .b-copyright {
+            @include rem("font-size",14);
+            font-family: $ff_text;
+            color: rgba(139, 139, 139, 0.502);
+        }
+        .b-link {
+           
+            @include rem("font-size",14);
+            font-family: $ff_text;
+            color: rgb(139, 139, 139);
+            @include rem("letter-spacing",3);
+            .b-curent {
+                color: $cl_text_2;
+                font-family: $ff_text;
+                font-weight: bold;
+            }
+        }
+    }
+}
