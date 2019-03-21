@@ -1,10 +1,12 @@
 .b-page-slider {
     position: relative;
     background-image: url('/src/images/img-slide.png');
+    background-size: 100% 100%;
     padding-top: 80px;
     padding-bottom: 100px;
     background-repeat: no-repeat;
     width: 100%;
+    
     &::after{
         position: absolute;
         width: 100%;
@@ -20,7 +22,7 @@
     }
     .mySlider {
         position: relative;
-        z-index: 9999;
+        z-index: 999;
         .b-content {
             .img-person {
                 display: inline-block;
