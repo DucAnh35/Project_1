@@ -45,7 +45,7 @@ $(window).scroll(function () {
 		a = 1;
 	}
 
-
+});
 
 wow = new WOW(
 	{
@@ -58,5 +58,5 @@ wow = new WOW(
 );
 wow.init();
 
-});
+
 
